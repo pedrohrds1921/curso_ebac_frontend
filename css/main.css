@@ -1,0 +1,122 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(232, 233, 230);
+}
+body > header{
+    background-color: rgb(38, 42, 78);
+    padding: 16px 0;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header li{
+    display: inline; 
+}
+header li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 16px;
+
+
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto ;
+}
+
+
+.articles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section article img{
+    width: 100%;
+}
+
+
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+
+section h2{
+
+font-size: 35px;
+}
+
+
+.articles article h3{
+    margin-top:8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.articles article a{
+    margin-top: 5px;
+    background-color:rgb(38, 42, 78);
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#sports{
+background-color: rgba(192, 250, 200, 0.596);
+
+}
+
+#sports article a{
+    background-color: rgb(49, 126, 53);
+}
+
+#entertainment{
+    background-color: rgb(201, 173, 132);
+}
+
+#entertainment article a{
+    background-color: rgb(133, 108, 71); 
+}
+
+#seriesandTV{
+    background-color: rgb(194, 230, 250);
+}
+
+#seriesandTV article a{
+    background-color: rgb(9, 87, 175);
+}
