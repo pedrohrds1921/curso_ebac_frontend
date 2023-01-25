@@ -1,24 +1,22 @@
 {
-  "name": "curso_ebac_frontend",
+  "name": "gulp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./src/dist/style.scss build/style.css --watch",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pedrohrds1921/curso_ebac_frontend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Pedrohrds1921/curso_ebac_frontend/issues"
-  },
-  "homepage": "https://github.com/Pedrohrds1921/curso_ebac_frontend#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.57.1"
   }
 }
