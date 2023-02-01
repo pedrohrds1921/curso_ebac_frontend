@@ -7,9 +7,8 @@
     font-family: Roboto, sans-serif;
     list-style: none;
 }
-
-.dflex{
-    display: flex;
+:root{
+    font-size: 62.5%;
 }
 
 @breackpointMobile: ~"(max-width:767px)";
@@ -17,84 +16,68 @@
 
 
 
-.container {
-    max-width: 1024px;
+body{
+    font-size: 1.6rem;
+    background-color: #color[backgroundcolor];
+}
+
+h1{
+    font-family: 'Basic', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #500d55;
+    margin-top: 40px;
+}
+
+main {
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
     @media @breackpointMobile{
         max-width: 80%;
     }
-   
 }
 
+button{
 
-
-header {
-    background-color: #color[headerColor];
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    .container {
-        .dflex();
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2.3rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    &:hover{
+        background-color: #437855;
     }
+
 }
 
+input{
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    max-width: 120px; 
+    border-bottom: 5px solid rgb(122, 68, 68);
+    outline: none;
+    text-align: center;
+    color: rgb(39, 38, 38);
+  
+}
 
-.menu{
-    .dflex();
-    li {
+.result{
+    padding: 16px;
+    margin-top: 120px;
+    border:  8px dotted #ffff;
+    display: none;
+    span{
         font-weight: bold;
-        margin-left: 24px;
-        a {
-            color: #color[txtColor];
-            text-decoration: none;
-        }
-        
-    }
-}
-
-section {
-    padding: 56px 0;
-
-    .products {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 32.66%);
-        column-gap: 1%;
-        row-gap: 4%;
-        width: 100%;
-        @media @breackpointMobile{
-            display: block;
-            .product-item  {
-                margin-bottom: 32px;
-            }
-        }
-
-        @media @breackpointTablet{
-            grid-template-columns: repeat(2, 48.5%);
-            column-gap: 3%;
-        }
-        
-
-
-        .product-item img {
-            width: 100%;
-            border-radius: 16px;
-        }
-
-        .product-button {
-            display: block;
-            background-color: #color[bntcolor];
-            color: #color[txtColor];
-            text-align: center;
-            padding: 8px 0;
-            border-radius: 8px;
-            margin-top: 8px;
-            text-decoration: none;
-        }
+        font-size: 3em;
+        display: block;
     }
 }
