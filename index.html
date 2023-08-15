@@ -53,7 +53,16 @@
                 followers.textContent=data.followers
                 subs.textContent=data.following
                 linkProfile.href=data.html_url
-            })
+            }).catch(error=>{
+            
+                name.textContent="N/A"
+                userName.textContent="N/A"
+                repos.textContent="N/A"
+                followers.textContent="N/A"
+                subs.textContent="N/A"
+                linkProfile.href="N/A"
+                
+                alert('Não conseguir puxar as informações')})
         })
     </script>
 </body>
